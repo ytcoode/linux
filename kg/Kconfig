@@ -1,0 +1,5 @@
+menu "Kernel Guide"
+
+source "kg/module/Kconfig"
+
+endmenu
