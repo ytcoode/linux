@@ -12,6 +12,7 @@
 
 #define DEBUG		/* Enable initcall_debug */
 
+#include <linux/kg.h>
 #include <linux/types.h>
 #include <linux/export.h>
 #include <linux/extable.h>
@@ -1029,6 +1030,8 @@ void start_kernel(void)
 	if (extra_init_args)
 		parse_args("Setting extra init args", extra_init_args,
 			   NULL, 0, -1, -1, NULL, set_init_arg);
+
+	kg_init();
 
 	/* Architectural and non-timekeeping rng init, before allocator init */
 	random_init_early(command_line);

@@ -1,0 +1,3 @@
+config KG_MODULE_HELLO
+	tristate "A basic hello world module"
+	default m
