@@ -5,3 +5,5 @@ obj-y += b/
 obj-y += c/
 obj-y += d/
 obj-y += e/
+
+obj-y += notifier/
