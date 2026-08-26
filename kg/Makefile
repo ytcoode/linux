@@ -7,6 +7,6 @@ obj-y += d/
 obj-y += e/
 
 obj-y += module/
+obj-y += printk/
 
-subdir-ccflags-y += -DDEBUG
-subdir-ccflags-y += -I$(src)
+subdir-ccflags-y += -I$(srctree)

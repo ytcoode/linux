@@ -8,4 +8,4 @@ static int init(void)
 	pr_info("c1_init\n");
 	return 0;
 }
-__initcall(init);
+late_initcall_sync(init);
