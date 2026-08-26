@@ -1,8 +1,8 @@
 #define pr_fmt(fmt) __FILE__ ": " fmt
 
 #include <linux/module.h>
-#include <e/e1.h>
-#include <module/e/e1.h>
+#include <kg/e/e1.h>
+#include <kg/module/e/e1.h>
 
 static int init(void)
 {
