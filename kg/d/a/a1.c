@@ -9,4 +9,4 @@ static int init(void)
 	pr_debug("debug\n");
 	return 0;
 }
-__initcall(init);
+late_initcall_sync(init);
